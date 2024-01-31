@@ -3,7 +3,10 @@ import { fetchData } from "../lib/fetchData";
 import { useEffect, useState } from "react";
 
 function QuoteBox() {
-  const [quote, setQuote] = useState({});
+  const [quote, setQuote] = useState({
+    content: "Quote is loading...",
+    author: "CyanDev",
+  });
 
   useEffect(() => {
     handleClick();
@@ -22,7 +25,7 @@ function QuoteBox() {
       <FaQuoteLeft className="absolute left-4 top-4 text-5xl" />
 
       <div className=" flex flex-col gap-4 text-black">
-        <span id="text" className={`text-center text-3xl font-semibold`}>
+        <span id="text" className="text-center text-3xl font-semibold">
           {quote.content}
         </span>
         <p id="author" className="text-right">
@@ -48,6 +51,9 @@ function QuoteBox() {
           New quote
         </button>
       </div>
+      <p className="absolute bottom-[-25px] right-4 text-xs text-gray-800">
+        Designed and coded by CyanDev
+      </p>
     </div>
   );
 }
