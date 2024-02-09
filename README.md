@@ -1,10 +1,3 @@
-FreeCodeCamp
-Front End Development Libraries Projects
-
-Random Quote Machine
-JS Framework - React + Vite
-CSS Framework - Tailwind CSS
-
 # FreeCodeCamp Front End Development Libraries Projects
 
 For the fulfillment of Build a Random Quote Machine Project.
